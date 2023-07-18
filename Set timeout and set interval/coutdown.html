@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Countdown Timer</title>
+    <style>
+        #countdown {
+            font-size: 48px;
+            text-align: center;
+            margin-top: 100px;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var countdownDuration = prompt((("Enter a value to countdion")));
+            var display = document.getElementById('countdown');
+            interval = setInterval(function(){display.innerText = `Countdown: ${countdownDuration}`;
+            countdownDuration--;
+            if(countdownDuration<0){
+                clearInterval(interval)
+            };},1000);
+        };
+    </script>
+</head>
+<body>
+    <div id="countdown">Loading...</div>
+</body>
+</html>

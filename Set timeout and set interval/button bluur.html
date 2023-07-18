@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blurr</title>
+</head>
+<body>
+    <button id="btn" disabled>Click me</button>
+    <p id="info">Button will  be available soon</p>
+</body>
+<script>setTimeout(function(){
+    document.getElementById("btn").disabled=false;
+document.getElementById("info").innerText="You can click now"},5000)</script>
+</html>

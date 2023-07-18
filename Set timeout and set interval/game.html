@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click game</title>
+</head>
+<body id="body">
+    <h1>Click as much as you can in next 10 seconds</h1>
+    <h2 id="score">Score: 0</h2>
+</body>
+<script>
+    timeout = setTimeout(function(){alert("Your score is " + score);
+    location.reload()},10000)
+    var score=0
+    document.getElementById("body").onclick= function(){
+        score+=1
+        document.getElementById("score").innerText=`Score: ${score}`
+
+    }
+   
+</script>
+</html>
